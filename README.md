@@ -6,6 +6,10 @@
 
 ## History
 
+> ### version 1.3.1
+- fix package and module name modify
+- package bug fixes
+
 > ### version 1.2.0
 - create pypi function
 - package bug fixes
@@ -25,19 +29,15 @@ pip install jhfunnycode
 
 ## Examples
 ```python
-from jhfunny import jhfunny
+from jhfunnycode import fun
 
-a = jhfunny.funny()
-
-a.starpix(5) # 피라미드 형태의 별찍기가 출력된다. 
-a.starpix(5, "down") # 뒤집힌 피라미드 형태의 별찍기 default vlaue => "up"
+fun.starpix(5) # 피라미드 형태의 별찍기가 출력된다. 
+fun.starpix(5, "down") # 뒤집힌 피라미드 형태의 별찍기 default vlaue => "up"
 ```
 ```python
-from jhfunny import jhfunny
+from jhfunnycode import fun
 
-a = jhfunny.funny()
-
-a.pypi("hello") # pypi("package_name")
+fun.pypi("hello") # pypi("package_name")
 ```
 pypi에 업로드하기위한 자료구조를 그대로 생성하여 쉽게 패키지를 배포할수있는 함수이다.
 [링크](https://imagine-village.tistory.com/entry/PyPi%EC%97%90-%ED%8C%A8%ED%82%A4%EC%A7%80%EB%A5%BC-%EC%97%85%EB%A1%9C%EB%93%9C-%ED%95%98%EB%8A%94-%EB%B2%95)를 클릭하면 pypi에 업로드하는 방식의 코드들이 나와있으니 참고하면 좋다.
