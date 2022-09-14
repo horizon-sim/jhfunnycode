@@ -27,13 +27,32 @@ pip install jhfunnycode
 ```
 또는 [링크](https://pypi.org/project/jhfunnycode/)에 접속해서 직접 다운받을 수 있다.
 
-## Examples
+# fun function index
+1. [starpix - 별 찍기를 함수 하나로 완성](#starpix)
+1. [pypi - pypi 업로드를 좀 더 단순하게](#pypi)
+<br>
+
+
+
+# starpix
+프로그래밍의 대표적인 반복문 예제인 별찍기를 함수로 단순화 시켰다.
+우리는 이중반복문 과제로부터 해방되었다.
+
+### Examples
 ```python
 from jhfunnycode import fun
 
 fun.starpix(5) # 피라미드 형태의 별찍기가 출력된다. 
 fun.starpix(5, "down") # 뒤집힌 피라미드 형태의 별찍기 default vlaue => "up"
 ```
+
+<br>
+
+# pypi
+본인이 만든 패키지를 남들이 사용할 수 있게 하고싶다. 그런경우 여러가지 방법이 있지만 그중 하나인 유명한 패키지 저장소 PyPi가 있다.
+여기에 올리기위해 여러가지 해야할 방법이 있는데 그 방법을 조금 더 단순화 시켰다.
+
+### Examples
 ```python
 from jhfunnycode import fun
 
