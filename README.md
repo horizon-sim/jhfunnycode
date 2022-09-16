@@ -1,3 +1,8 @@
+# fun function index
+1. [starpix - 별 찍기를 함수 하나로 완성](#starpix)
+1. [pypi - pypi 업로드를 좀 더 단순하게](#pypi)
+1. [tentobin - 소수까지 십진수를 이진수로](#tentobin)
+
 # Description
 
 이 프로젝트는 "life is funny"라는 슬로건을 기준삼아 만들어진 패키지이다.
@@ -30,10 +35,6 @@ pip install jhfunnycode
 ```
 또는 [링크](https://pypi.org/project/jhfunnycode/)에 접속해서 직접 다운받을 수 있다.
 
-# fun function index
-1. [starpix - 별 찍기를 함수 하나로 완성](#starpix)
-1. [pypi - pypi 업로드를 좀 더 단순하게](#pypi)
-1. [tentobin - 소수까지 십진수를 이진수로](#tentobin)
 <br>
 
 
