@@ -70,5 +70,3 @@ def tentobin(value):
             
         complete_value = float((str(front_value))[2:]+"."+(back_value))
         return complete_value
-        
-print(type(tentobin(10)))

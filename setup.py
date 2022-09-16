@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name ='jhfunnycode',
-    version = '1.3.1',
+    version = '1.4.0',
     description = 'life is fun',
     author = 'i_enable',
     author_email = None,
