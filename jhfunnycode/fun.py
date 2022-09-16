@@ -1,5 +1,6 @@
 import os
 
+# 별 찍기
 def starpix(star_index, updown="up"):
     
     if updown == "up":
@@ -16,6 +17,7 @@ def starpix(star_index, updown="up"):
             miner_idx -= 1
             i += 1
 
+# pypi 패키지 자료구조 생성함수
 def pypi(package_name):
     # main directory
     os.makedirs(f'./{package_name}/{package_name}')
@@ -40,3 +42,33 @@ packages=find_packages(),\n\
     with open(f"./{package_name}/README.md", "w") as f:
         pass
 
+def tentobin(value):
+    if type(value) is int:
+        binvalue = bin(value)
+        return int(binvalue[2:])
+    
+    elif type(value) is float:
+        strvalue = (str(value))
+        dotindex = strvalue.index(".")
+        
+        front_value = bin(int(strvalue[:dotindex]))
+        back_basic_value = float("0."+strvalue[dotindex + 1:])
+        
+        back_value = ""
+        
+        while True:
+            back_basic_value *= 2
+            
+            if back_basic_value > 1:
+                back_value += "1"
+                back_basic_value -= 1
+            elif back_basic_value < 1:
+                back_value += "0"
+            elif back_basic_value == 1:
+                back_value += "1"
+                break
+            
+        complete_value = float((str(front_value))[2:]+"."+(back_value))
+        return complete_value
+        
+print(type(tentobin(10)))
